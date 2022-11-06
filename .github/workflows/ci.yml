@@ -31,7 +31,7 @@ jobs:
       uses: anchore/scan-action@v3
       id: scan
       with:
-        image: "yaqubakhtar/falcon-look-app"
+        image: "sha-ak/DevOps-Project2-Falcon-Look-App"
 
     - name: upload Anchore scan SARIF report
       uses: github/codeql-action/upload-sarif@v2
