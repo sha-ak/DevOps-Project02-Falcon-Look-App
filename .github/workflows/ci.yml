@@ -39,10 +39,9 @@ jobs:
         sarif_file: ${{ steps.scan.outputs.sarif }}
 
     - uses: actions/upload-artifact@v3
-      if: ${{ always() }}
       with:
         name: vuln-report
-        sarif_file: results.sarif
+        path: results.sarif
 
     - uses: actions/upload-artifact@v3
       if: ${{ always() }}
