@@ -42,7 +42,7 @@ jobs:
       if: ${{ always() }}
       with:
         name: vuln-report
-        path: results.sarif
+        sarif_file: results.sarif
 
     - uses: actions/upload-artifact@v3
       if: ${{ always() }}
